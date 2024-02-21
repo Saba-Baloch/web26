@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .loader{
+         
+            height: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(2, 2, 2);
+            border: 2px solid red;
+          
+            animation-name: loading;
+            animation-duration: 0.8s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .box:nth-child(2){
+            animation-delay: 0.3s;
+        }
+        .box:nth-child(3){
+            animation-delay: 0.5s;
+        }
+        @keyframes loading {
+            from{
+                transform: translateY(-3px);
+            }
+            to{
+                transform: translateY(3px);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

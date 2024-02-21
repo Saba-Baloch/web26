@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+       
+            outline: 5px solid rgb(246, 194, 5);
+            outline-offset: -10px;
+            display: grid;
+            border-radius: 50%;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            background-color: rgb(211, 207, 86);
+            box-shadow: 0 0 10px  rgb(247, 239, 34) ;
+            animation-name: movement;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function:linear;
+        }
+     
+        .box:nth-child(1){
+        
+            grid-column: 1/span 3;
+            background-image: url(pngwing.com\ \(3\).png);
+            background-size: 20%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box:nth-child(2){
+             
+            background-image: url(pngwing.com\ \(2\).png);
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box:nth-child(3){
+             
+            background-image: url(pngwing.com\ \(1\).png);
+            background-size: 70%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: rgb(215, 227, 119);
+            outline: 3px solid rgb(254, 221, 3);
+            outline-offset: -5px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px yellow;
+            
+        }
+        .box:nth-child(4){
+             
+            background-image: url(pngwing.com\ \(4\).png);
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .box:nth-child(5){
+        
+            grid-column: 1/span 3;
+            background-image: url(pngwing.com\ \(5\).png);
+            background-size: 20%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        @keyframes movement {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            
+        }
+        a{
+            display: block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    
+
+    <a href="anim.html">animation</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="loader.html">loader</a>
+</body>
+</html>
